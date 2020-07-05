@@ -1,11 +1,11 @@
-package ar.jluque.java8.lambda;
+package ar.jluque.java8.a.lambda;
 
 /**
  * Para Lambdas sin parametros
  * @author Alfredo
  *
  */
-public interface OperacionLibre {
+public interface IOperacionLibre {
 
 	public double calcularVacio();
 }

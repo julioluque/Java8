@@ -1,4 +1,4 @@
-package ar.jluque.java8.lambda;
+package ar.jluque.java8.a.lambda;
 
 public class SintaxisLambdaApp {
 
@@ -23,7 +23,7 @@ public class SintaxisLambdaApp {
 //			System.out.println("B value: " + b);
 //			return (a + b) / 2;
 //		};
-		Operacion op = (a, b) -> {
+		IOperacion op = (a, b) -> {
 			System.out.println("old A: " + a);
 			a = a + 0.2;
 			System.out.println("new A: " + a);
@@ -31,13 +31,13 @@ public class SintaxisLambdaApp {
 			return (a + b) / 2;
 		};
 
-		return op.calcularPromedio(2, 5);
+		return op.calcular(2, 5);
 
 	}
 
 	public double SintaxisSinParametros() {
 //		OperacionLibre op = () -> 2; // quitar parametros de la intefaz y la llamada
-		OperacionLibre op = () -> {
+		IOperacionLibre op = () -> {
 			int x = 2;
 			int y = 5;
 			return x - y;

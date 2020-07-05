@@ -1,4 +1,4 @@
-package ar.jluque.java8.lambda;
+package ar.jluque.java8.a.lambda;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -24,19 +24,19 @@ public class LambdaApp {
 	
 //		JDK 1.7 
 	public void calcular(double n1, double n2) {
-		Operacion op = new Operacion() {
+		IOperacion op = new IOperacion() {
 			@Override
-			public double calcularPromedio(double a, double b) {
+			public double calcular(double a, double b) {
 				return (a + b) / 2;
 			}
 		};
-		System.out.println(op.calcularPromedio(n1, n2));
+		System.out.println(op.calcular(n1, n2));
 	}
 
 //		JDK 1.8 -> EXPRESION LAMBDA 
 	public void calcularLambda(double n1, double n2) {
-		Operacion op = (double a, double b) -> (a + b) / 2;
-		System.out.println(op.calcularPromedio(n1, n2));
+		IOperacion op = (double a, double b) -> (a + b) / 2;
+		System.out.println(op.calcular(n1, n2));
 	}
 
 //	-----------------------------------------------------------------------------	
