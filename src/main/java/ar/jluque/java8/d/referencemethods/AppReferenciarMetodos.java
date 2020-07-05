@@ -5,10 +5,18 @@ import java.util.Comparator;
 
 public class AppReferenciarMetodos {
 
+	/**
+	 * Metodo de acceso, Operar()
+	 */
 	public static void metodoEstatico() {
 		System.out.println("Referenciando metodo estatico");
 	}
 
+	/**
+	 * Variacion 1 : Tradicional Variacion 2 : Lambda Variacion 3 : Metodo de
+	 * referencia
+	 * 
+	 */
 	public void metodoInstanciaObjetoArbitrario() {
 		System.out.println("Metodo referido en la Instancia del propio metodo");
 		String[] nombres = { "Julio", "Alfredo", "Luque", "Ticona" };
@@ -29,10 +37,17 @@ public class AppReferenciarMetodos {
 		System.out.println(Arrays.toString(nombres));
 	}
 
+	/**
+	 * Accedido e instanciado desde el main
+	 */
 	public void metodoInstanciaObjetoParticular() {
 		System.out.println("Metodo referido de un objeto en particular");
 	}
 
+	/**
+	 * Referencia apoyada en la clase Persona; Variacion 1 : Tradicional Variacion 2
+	 * : Lambda Variacion 3 : Metodo de referencia
+	 */
 	public void referenciarConstructor() {
 		IPersona per = new IPersona() {
 			@Override
@@ -60,16 +75,27 @@ public class AppReferenciarMetodos {
 		System.out.println(opRef.hashCode());
 	}
 
+	/**
+	 * Las referencias a metodos, se apoyan en las interfaces funcionales. Los
+	 * metodos a referencias no aceptan el pase de parametros
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		AppReferenciarMetodos app = new AppReferenciarMetodos();
-		
+
+		// LLAMA AL PRIMER METODO DE REFERENCIA POR MEDIO DE OPERAR
 		app.operar();
-		
+
+		// LLAMA AL SEGUNDO METODO DE REFERENCIA.
 		app.metodoInstanciaObjetoArbitrario();
 
+		// IMPLEMENTAMOS EL METODO SOBRE UN OBJETO PARTICULAR -> 3ER METODO
 		IOperacion op = app::metodoInstanciaObjetoParticular;
 		op.ejecutar();
 
+		// LLAMA A LA REFERENCIA POR COSNTRUCTOR, ALTERNANDO SIMPLIFICACION DE CODIGO.
+		// TRACICIONAL -> LAMBDA -> REFERENCIA
 		app.referenciarConstructor();
 	}
 
