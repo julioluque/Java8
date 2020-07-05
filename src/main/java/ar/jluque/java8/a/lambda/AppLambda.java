@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class LambdaApp {
+public class AppLambda {
 
 	public static void main(String[] args) {
 		
@@ -15,7 +15,7 @@ public class LambdaApp {
 		lista.add("ticona");
 		lista.add("alfredo");
 
-		LambdaApp app = new LambdaApp();
+		AppLambda app = new AppLambda();
 		app.ordenar(lista);
 		app.calcular(4, 3);
 

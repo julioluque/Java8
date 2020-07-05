@@ -1,6 +1,6 @@
 package ar.jluque.java8.a.lambda;
 
-public class SintaxisLambdaApp {
+public class AppSintaxisLambda {
 
 	public double probarSintaxis() {
 
@@ -49,7 +49,7 @@ public class SintaxisLambdaApp {
 
 	public static void main(String[] args) {
 
-		SintaxisLambdaApp app = new SintaxisLambdaApp();
+		AppSintaxisLambda app = new AppSintaxisLambda();
 		System.out.println("Variaciones de sintaxis: " + app.probarSintaxis());
 		System.out.println("Variacioens sin parametros: " + app.SintaxisSinParametros());
 

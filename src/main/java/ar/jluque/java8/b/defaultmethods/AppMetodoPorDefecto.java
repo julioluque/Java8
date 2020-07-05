@@ -1,6 +1,6 @@
 package ar.jluque.java8.b.defaultmethods;
 
-public class MetodoPorDefecto implements IVendedor, ICocinero {
+public class AppMetodoPorDefecto implements IVendedor, ICocinero {
 
 	@Override
 	public void caminar() {
@@ -15,7 +15,7 @@ public class MetodoPorDefecto implements IVendedor, ICocinero {
 	}
 	
 	public static void main(String[] args) {
-		MetodoPorDefecto app = new MetodoPorDefecto();
+		AppMetodoPorDefecto app = new AppMetodoPorDefecto();
 		app.caminar();
 		app.respirar();
 		app.hablar();

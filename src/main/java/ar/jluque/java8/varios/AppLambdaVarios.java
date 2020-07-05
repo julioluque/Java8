@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class LambdaAppVarios {
+public class AppLambdaVarios {
 
 	public static void main(String[] args) {
 		List<Integer> lista = Arrays.asList(4, 3, 6, 1, 7, 3, 5, 1, 5, 8, 9, 4, 0, 1, 9, 2, 6);

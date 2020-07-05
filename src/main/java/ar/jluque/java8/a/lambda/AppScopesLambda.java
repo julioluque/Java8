@@ -1,6 +1,6 @@
 package ar.jluque.java8.a.lambda;
 
-public class ScopesLambdaApp {
+public class AppScopesLambda {
 
 	private static double valorEstatico;
 	private double valorNormal;
@@ -52,7 +52,7 @@ public class ScopesLambdaApp {
 
 	public static void main(String[] args) {
 
-		ScopesLambdaApp scope = new ScopesLambdaApp();
+		AppScopesLambda scope = new AppScopesLambda();
 		System.out.println("VariableLocal: " + scope.probarVariableLocal());
 		System.out.println("AtributosVariableLocal: " + scope.probarAtributosVariableLocal());
 	}
