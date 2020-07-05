@@ -1,10 +1,13 @@
-package ar.jluque.java8.b.interfacesfuncionales;
+package ar.jluque.java8.c.interfacesfuncionales;
 
 public class AppInterfazFuncional implements IOperacion {
 
 	public static void main(String[] args) {
 		AppInterfazFuncional app = new AppInterfazFuncional();
+		app.iniciado();
+		app.ejecutar();
 		System.out.println(app.calcular(23, 5));
+		
 	}
 
 	@Override
