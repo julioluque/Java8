@@ -72,7 +72,7 @@ public class AppOptional {
 		AppOptional app = new AppOptional();
 //		app.probar(null);
 //		app.orElse("juuuulio");
-//		app.orElseThrow(null);
-		app.isPresent("Juuu");
+		app.orElseThrow(null);
+//		app.isPresent("Juuu");
 	}
 }
