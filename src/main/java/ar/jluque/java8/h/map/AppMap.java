@@ -25,6 +25,7 @@ public class AppMap {
 
 	private void imprimirVersion8() {
 		mapa.forEach((k, v) -> System.out.println("v8 - Llave: " + k + ", valor: " + v));
+
 	}
 
 	private void imprmirVersion8ConStreams() {
