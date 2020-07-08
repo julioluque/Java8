@@ -1,6 +1,5 @@
 package ar.jluque.java8.h.map;
 
-import java.security.KeyStore.Entry;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
